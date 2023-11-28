@@ -25,7 +25,7 @@ plot_maturity_offset <- function(data) {
     ggplot2::geom_text(ggplot2::aes(x = 0, y = -0.2, label = "PHV"), color = "grey", size = 3) +
     ggplot2::geom_text(ggplot2::aes(x = 0, y = -1, label = ""), color = "transparent") +
     ggplot2::scale_color_manual(name="Time", values = c("Past PHV" = "deepskyblue3", "Before PHV" = "darkred")) +
-    ggplot2::xlim(-4,4) +
+    ggplot2::xlim(-3,3) +
     ggplot2::ylab("Athlete \n") + ggplot2::xlab("\n Years") +
     ggplot2::labs(title = "Maturity Offset", subtitle = "Length of time (in years) from PHV \n") +
     ggplot2::theme_light() +
